@@ -67,6 +67,9 @@ body {
       font-family: KozGoPro_Bold;
       font-size: 20px;
       margin-left: 7px;
+      &:hover {
+          opacity: 0.5;
+      }
     }
   }
   &_button {
@@ -86,6 +89,9 @@ body {
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      &:hover {
+          opacity: 0.5;
+      }
       & i {
         color: white;
       }
