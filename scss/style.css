@@ -57,6 +57,7 @@ body {
   font-family: KozGoPro_Heavy;
   color: #00aced;
   font-size: 36px;
+  cursor: pointer;
 }
 
 .top-nav_menu {
@@ -100,6 +101,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .top-nav_user img {
@@ -143,6 +145,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .top-nav_button-circle i {
