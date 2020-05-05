@@ -10,6 +10,11 @@ a {
   }
 }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 body {
   background-color: #fff;
   color: $text-color;
@@ -24,11 +29,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1200;
+  top: 0;
+  width: 100%;
   &_logo {
     font-family: KozGoPro_Heavy;
     color: $primary;
     font-size: 36px;
+    padding-left: 15px;
     cursor: pointer;
   }
   &_menu {
@@ -38,6 +48,7 @@ body {
   &_items {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     & li {
       margin-right: 39px;
       &:last-child {
@@ -67,8 +78,9 @@ body {
       font-family: KozGoPro_Bold;
       font-size: 20px;
       margin-left: 7px;
+      margin-right: 25px;
       &:hover {
-          opacity: 0.5;
+        opacity: 0.5;
       }
     }
   }
@@ -90,7 +102,7 @@ body {
       align-items: center;
       cursor: pointer;
       &:hover {
-          opacity: 0.5;
+        opacity: 0.5;
       }
       & i {
         color: white;
@@ -98,3 +110,108 @@ body {
     }
   }
 }
+
+.slider {
+  background: linear-gradient(0.25turn, $primary, #dadc55);
+  height: 100vh;
+
+  &-block {
+    padding-top: 120px;
+    position: relative;
+    & img {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+    }
+    &_content {
+      position: absolute;
+      right: 0;
+      top: 12rem;
+      color: white;
+      text-align: right;
+      z-index: 5;
+      & h1 {
+        font-size: 2.8rem;
+        font-family: KozGoPro_Bold;
+        margin: 0;
+      }
+      & h2 {
+        font-size: 1.7rem;
+        margin: 0;
+      }
+      & a {
+        text-decoration: none;
+      }
+      .btn {
+        padding: 5px 40px;
+        display: inline-block;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        font-size: 26px;
+        margin-top: 80px;
+        &-warning {
+          background-color: $active-color;
+          &:hover {
+            background-color: lighten($active-color, 2%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slide {
+    height: 100vh;
+}
+
+.slick-next {
+    position: absolute;
+    right: -85px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    outline: none;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(315deg);
+}
+.slick-prev {
+    position: absolute;
+    left: -85px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    outline: none;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(135deg);
+}
+.slick-next:before {
+    content: '';
+}
+.slick-prev:before {
+    content: '';
+}
+

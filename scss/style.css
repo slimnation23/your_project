@@ -30,6 +30,11 @@ a:focus {
   outline: none;
 }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 body {
   background-color: #fff;
   color: #383838;
@@ -50,13 +55,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  z-index: 1200;
+  top: 0;
+  width: 100%;
 }
 
 .top-nav_logo {
   font-family: KozGoPro_Heavy;
   color: #00aced;
   font-size: 36px;
+  padding-left: 15px;
   cursor: pointer;
 }
 
@@ -72,6 +83,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .top-nav_items li {
@@ -113,6 +126,7 @@ body {
   font-family: KozGoPro_Bold;
   font-size: 20px;
   margin-left: 7px;
+  margin-right: 25px;
 }
 
 .top-nav_user h3:hover {
@@ -158,5 +172,123 @@ body {
 
 .top-nav_button-circle i {
   color: white;
+}
+
+.slider {
+  background: -webkit-gradient(linear, left top, right top, from(#00aced), to(#dadc55));
+  background: linear-gradient(0.25turn, #00aced, #dadc55);
+  height: 100vh;
+}
+
+.slider-block {
+  padding-top: 120px;
+  position: relative;
+}
+
+.slider-block img {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.slider-block_content {
+  position: absolute;
+  right: 0;
+  top: 12rem;
+  color: white;
+  text-align: right;
+  z-index: 5;
+}
+
+.slider-block_content h1 {
+  font-size: 2.8rem;
+  font-family: KozGoPro_Bold;
+  margin: 0;
+}
+
+.slider-block_content h2 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.slider-block_content a {
+  text-decoration: none;
+}
+
+.slider-block_content .btn {
+  padding: 5px 40px;
+  display: inline-block;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 80px;
+}
+
+.slider-block_content .btn-warning {
+  background-color: #ff5000;
+}
+
+.slider-block_content .btn-warning:hover {
+  background-color: #ff570a;
+}
+
+.slick-slide {
+  height: 100vh;
+}
+
+.slick-next {
+  position: absolute;
+  right: -85px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.slick-prev {
+  position: absolute;
+  left: -85px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.slick-next:before {
+  content: '';
+}
+
+.slick-prev:before {
+  content: '';
 }
 /*# sourceMappingURL=style.css.map */
