@@ -1,0 +1,151 @@
+@font-face {
+  font-family: KozGoPro_Bold;
+  src: url("/font/KozGoPro-Bold.otf");
+}
+
+@font-face {
+  font-family: KozGoPro_Heavy;
+  src: url("/font/KozGoPro-Heavy.otf");
+}
+
+@font-face {
+  font-family: KozGoPro_Light;
+  src: url("/font/KozGoPro-Light.otf");
+}
+
+@font-face {
+  font-family: KozGoPro_Medium;
+  src: url("/font/KozGoPro-Medium.otf");
+}
+
+@font-face {
+  font-family: KozGoPro_Regular;
+  src: url("/font/KozGoPro-Regular.otf");
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: none;
+}
+
+body {
+  background-color: #fff;
+  color: #383838;
+  margin: 0;
+  padding: 0;
+  font-family: KozGoPro_Light;
+  font-size: 16px;
+  width: 1400px;
+}
+
+.top-nav {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.top-nav_logo {
+  font-family: KozGoPro_Heavy;
+  color: #00aced;
+  font-size: 36px;
+  padding: 10px 10px 10px 25px;
+}
+
+.top-nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-nav_items {
+  list-style: none;
+  padding-top: 13px;
+  padding-left: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-nav_items li {
+  margin-right: 39px;
+}
+
+.top-nav_items li:last-child {
+  margin-right: 0;
+}
+
+.top-nav_items li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #373737;
+  font-family: KozGoPro_Heavy;
+  font-size: 18px;
+}
+
+.top-nav_items li a:hover {
+  color: #ff5000;
+}
+
+.top-nav_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 195px;
+  margin-top: 4px;
+}
+
+.top-nav_user img {
+  width: 42px;
+  height: 42px;
+}
+
+.top-nav_user h3 {
+  font-family: KozGoPro_Bold;
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+.top-nav_button {
+  width: 110px;
+  height: 90px;
+  background-color: #ff5000;
+  margin-left: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav_button-circle {
+  width: 41px;
+  height: 41px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: #ff5000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav_button-circle i {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
