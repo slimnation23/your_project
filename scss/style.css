@@ -37,7 +37,6 @@ body {
   padding: 0;
   font-family: KozGoPro_Light;
   font-size: 16px;
-  width: 1400px;
 }
 
 .top-nav {
@@ -45,6 +44,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -52,19 +57,17 @@ body {
   font-family: KozGoPro_Heavy;
   color: #00aced;
   font-size: 36px;
-  padding: 10px 10px 10px 25px;
 }
 
 .top-nav_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 10rem;
 }
 
 .top-nav_items {
   list-style: none;
-  padding-top: 13px;
-  padding-left: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,8 +100,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 195px;
-  margin-top: 4px;
 }
 
 .top-nav_user img {
@@ -116,7 +117,6 @@ body {
   width: 110px;
   height: 90px;
   background-color: #ff5000;
-  margin-left: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
