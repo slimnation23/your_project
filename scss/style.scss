@@ -236,6 +236,7 @@ body {
 .content {
   margin-top: 67px;
   margin-bottom: 100px;
+  //   block1
   &-block1 {
     margin-bottom: 95px;
     & h1 {
@@ -316,6 +317,86 @@ body {
       }
     }
   }
+  //   block2
+  &-block2 {
+    margin-bottom: 85px;
+    padding: 55px 55px 75px 55px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    & h1 {
+      font-size: 35px;
+      font-family: KozGoPro_Medium;
+      color: $red-color;
+      text-align: center;
+    }
+    &-item {
+      display: flex;
+      margin-top: 50px;
+      &_img {
+        width: 98px;
+        height: 87px;
+        background-color: $primary;
+        border-radius: 10px;
+        padding: 20px 28px;
+        margin-right: 20px;
+        &_pink {
+            background-color: rgb(255, 65, 129);
+        }
+      }
+      &_h {
+        flex-direction: column;
+        color: $text-color;
+        text-transform: uppercase;
+        & h2 {
+            font-size: 26px;
+            font-family: KozGoPro_Medium;
+        }
+        & h3 {
+            margin-left: 10px;
+            font-size: 20px;
+            font-family: KozGoPro_Light;
+        }
+        &__items {
+            & h3 {
+                font-size: 16px;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $text-color;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+      }
+    }
+  }
+//   block3
+  &-block3 {
+      margin-bottom: 55px;
+      background-color: $red-color;
+      padding: 65px 110px 85px 110px;
+      color: #fff;
+      & h1 {
+          font-size: 36px;
+          font-family: KozGoPro_Bold;
+          text-align: center;
+          text-transform: uppercase;
+      }
+      & h2 {
+          font-size: 26px;
+          text-align: center;
+          margin-bottom: 15px;
+      }
+      & p {
+          font-size: 22px;
+          line-height: 1.864;
+      }
+  }
 }
 
+  
 
+  
