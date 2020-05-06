@@ -36,6 +36,10 @@ img {
   max-width: 100%;
 }
 
+.adapt-menu {
+  display: none;
+}
+
 .btn {
   padding: 5px 30px;
   display: inline-block;
@@ -87,9 +91,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: fixed;
-  z-index: 1200;
-  top: 0;
+  // position: fixed;
+  // z-index: 1550;
+  // top: 0;
   width: 100%;
   &_logo {
     font-family: KozGoPro_Heavy;
@@ -170,10 +174,10 @@ body {
 
 .slider {
   background: linear-gradient(0.25turn, $primary, #dadc55);
-  height: 100vh;
+  height: 650px;
 
   &-block {
-    padding-top: 120px;
+    padding-top: 80px;
     position: relative;
     & img {
       position: absolute;
@@ -223,7 +227,7 @@ body {
 
 // Slider
 .slick-slide {
-  height: 100vh;
+  height: 650px;
 }
 
 .slick-next {

@@ -23,31 +23,44 @@
   src: url("/font/KozGoPro-Regular.otf");
 }
 
-@media (max-width: 767px) {
-  html {
-    font-size: 5px;
+@media (max-width: 1291px) {
+  .top-nav_menu {
+    display: none !important;
   }
-  .top-nav_btn {
-    display: block;
+  .adapt-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
   }
-  .top-nav_items {
+  .adapt-menu_items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    display: none;
+    list-style: none;
   }
-  .top-nav_items__active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 0;
+  .adapt-menu_items li {
+    margin-right: 20px;
   }
-  .top-nav_items li {
-    line-height: 2;
+  .adapt-menu_items li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #373737;
+    font-family: KozGoPro_Heavy;
+    font-size: 18px;
   }
-  .top-nav_items li a::after {
-    display: none;
+  .adapt-menu_items li a:hover {
+    color: #ff5000;
+  }
+}
+
+@media (max-width: 767px) {
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
   }
 }
 
@@ -81,6 +94,10 @@ p {
 
 img {
   max-width: 100%;
+}
+
+.adapt-menu {
+  display: none;
 }
 
 .btn {
@@ -145,9 +162,6 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: fixed;
-  z-index: 1200;
-  top: 0;
   width: 100%;
 }
 
@@ -265,11 +279,11 @@ body {
 .slider {
   background: -webkit-gradient(linear, left top, right top, from(#00aced), to(#dadc55));
   background: linear-gradient(0.25turn, #00aced, #dadc55);
-  height: 100vh;
+  height: 650px;
 }
 
 .slider-block {
-  padding-top: 120px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -325,7 +339,7 @@ body {
 }
 
 .slick-slide {
-  height: 100vh;
+  height: 650px;
 }
 
 .slick-next {
