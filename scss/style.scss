@@ -45,6 +45,11 @@ img {
   text-decoration: none;
   font-size: 16px;
   font-weight: 700;
+  &-red {
+    background-color: $red-color;
+    color: #fff;
+    font-size: 25px;
+  }
   &-white {
     background-color: #fff;
     width: 250px;
@@ -273,7 +278,6 @@ body {
 // Block1
 .content {
   margin-top: 67px;
-  margin-bottom: 100px;
   //   block1
   &-block1 {
     margin-bottom: 95px;
@@ -567,6 +571,7 @@ body {
   //   Block 6
   &-block6 {
     margin-top: 70px;
+    margin-bottom: 50px;
     & h1 {
       font-size: 36px;
       font-family: KozGoPro_Bold;
@@ -604,19 +609,105 @@ body {
         border-radius: 50%;
         cursor: pointer;
         & i {
-            color: white;
-            margin-top: 5px;
+          color: white;
+          margin-top: 5px;
         }
       }
     }
     &-item_none {
-        display: none;
-        padding: 20px;
-        transition: ease-in;
-        &__active {
-            display: flex;
-            flex-direction: column;
-        }
+      display: none;
+      padding: 20px;
+      transition: ease-in;
+      &__active {
+        display: flex;
+        flex-direction: column;
+      }
     }
+  }
+  //   Block7
+  &-block7 {
+    background-color: #b1d518;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: #fff;
+    }
+    &-item {
+      background-color: #fff;
+      display: flex;
+      margin-bottom: 7px;
+      padding: 20px 35px;
+      & h4 {
+        color: $primary;
+        font-size: 18px;
+        font-family: KozGoPro_Bold;
+        margin-right: 60px;
+      }
+      & h5 {
+        font-size: 18px;
+      }
+    }
+    &-btn {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}
+
+// footer
+.footer {
+  padding: 90px 30px;
+  background-image: url(/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #929497;
+  & h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  & li {
+      margin-bottom: 14px;
+  }
+  a {
+    color: #929497;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  &_menu {
+      display: flex;
+      flex-direction: column;
+      & a {
+          display: flex;
+          align-items: center;
+          & img {
+              margin-right: 15px;
+          }
+          & span {
+            font-size: 20px;
+            color: #cacbcc;
+            text-transform: uppercase;
+            font-family: KozGoPro_Bold;
+          }
+      }
   }
 }

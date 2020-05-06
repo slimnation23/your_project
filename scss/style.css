@@ -94,6 +94,12 @@ img {
   font-weight: 700;
 }
 
+.btn-red {
+  background-color: #ef3139;
+  color: #fff;
+  font-size: 25px;
+}
+
 .btn-white {
   background-color: #fff;
   width: 250px;
@@ -376,7 +382,6 @@ body {
 
 .content {
   margin-top: 67px;
-  margin-bottom: 100px;
 }
 
 .content-block1 {
@@ -754,6 +759,7 @@ body {
 
 .content-block6 {
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .content-block6 h1 {
@@ -826,5 +832,116 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.content-block7 {
+  background-color: #b1d518;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.content-block7 h1 {
+  font-size: 36px;
+  font-family: KozGoPro_Bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.content-block7 h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+.content-block7-item {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7px;
+  padding: 20px 35px;
+}
+
+.content-block7-item h4 {
+  color: #00aced;
+  font-size: 18px;
+  font-family: KozGoPro_Bold;
+  margin-right: 60px;
+}
+
+.content-block7-item h5 {
+  font-size: 18px;
+}
+
+.content-block7-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer {
+  padding: 90px 30px;
+  background-image: url(/img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #929497;
+}
+
+.footer h1 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.footer li {
+  margin-bottom: 14px;
+}
+
+.footer a {
+  color: #929497;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_menu a img {
+  margin-right: 15px;
+}
+
+.footer_menu a span {
+  font-size: 20px;
+  color: #cacbcc;
+  text-transform: uppercase;
+  font-family: KozGoPro_Bold;
 }
 /*# sourceMappingURL=style.css.map */
