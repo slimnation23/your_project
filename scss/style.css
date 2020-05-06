@@ -231,8 +231,8 @@ body {
 }
 
 .top-nav_button-circle {
-  width: 41px;
-  height: 41px;
+  width: 50px;
+  height: 50px;
   border: 2px solid white;
   border-radius: 50%;
   background-color: #ff5000;
@@ -750,5 +750,81 @@ body {
 
 .content-block5-btn {
   text-align: center;
+}
+
+.content-block6 {
+  margin-top: 70px;
+}
+
+.content-block6 h1 {
+  font-size: 36px;
+  font-family: KozGoPro_Bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ff5000;
+}
+
+.content-block6 h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 45px;
+  color: #ff5000;
+}
+
+.content-block6-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 2px dotted rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.content-block6-item h3 {
+  color: #ff5000;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: KozGoPro_Medium;
+  margin-right: 70px;
+}
+
+.content-block6-item button {
+  width: 40px;
+  height: 35px;
+  background-color: #383838;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content-block6-item button i {
+  color: white;
+  margin-top: 5px;
+}
+
+.content-block6-item_none {
+  display: none;
+  padding: 20px;
+  -webkit-transition: ease-in;
+  transition: ease-in;
+}
+
+.content-block6-item_none__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */

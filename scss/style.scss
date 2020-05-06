@@ -144,8 +144,8 @@ body {
     justify-content: center;
     align-items: center;
     &-circle {
-      width: 41px;
-      height: 41px;
+      width: 50px;
+      height: 50px;
       border: 2px solid white;
       border-radius: 50%;
       background-color: $active-color;
@@ -562,6 +562,61 @@ body {
     }
     &-btn {
       text-align: center;
+    }
+  }
+  //   Block 6
+  &-block6 {
+    margin-top: 70px;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: $active-color;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: $active-color;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      border: 2px dotted rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      margin-bottom: 25px;
+      & h3 {
+        color: $active-color;
+        font-size: 20px;
+        line-height: 1.6;
+        font-family: KozGoPro_Medium;
+        margin-right: 70px;
+      }
+      & button {
+        width: 40px;
+        height: 35px;
+        background-color: $text-color;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        & i {
+            color: white;
+            margin-top: 5px;
+        }
+      }
+    }
+    &-item_none {
+        display: none;
+        padding: 20px;
+        transition: ease-in;
+        &__active {
+            display: flex;
+            flex-direction: column;
+        }
     }
   }
 }
