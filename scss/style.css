@@ -23,6 +23,34 @@
   src: url("/font/KozGoPro-Regular.otf");
 }
 
+@media (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+  .top-nav_btn {
+    display: block;
+  }
+  .top-nav_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  .top-nav_items__active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+  }
+  .top-nav_items li {
+    line-height: 2;
+  }
+  .top-nav_items li a::after {
+    display: none;
+  }
+}
+
 button:focus,
 input:focus,
 textarea:focus,
@@ -30,9 +58,21 @@ a:focus {
   outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
+}
+
+.row {
+  margin: 0;
 }
 
 body {
@@ -285,10 +325,119 @@ body {
 }
 
 .slick-next:before {
-  content: '';
+  content: "";
 }
 
 .slick-prev:before {
-  content: '';
+  content: "";
+}
+
+.content {
+  margin-top: 67px;
+  margin-bottom: 100px;
+}
+
+.content-block1 {
+  margin-bottom: 95px;
+}
+
+.content-block1 h1 {
+  font-size: 35px;
+  font-family: KozGoPro_Medium;
+  color: #ff5000;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.content-block1-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 35px;
+}
+
+.content-block1-item_primary {
+  background-color: #00aced;
+}
+
+.content-block1-item_orange {
+  background-color: #ffb632;
+}
+
+.content-block1-item_green {
+  background-color: #19fea1;
+}
+
+.content-block1-item_grey {
+  background-color: #48626f;
+}
+
+.content-block1-item_yellow {
+  background-color: #fef102;
+}
+
+.content-block1-item_aqua {
+  background-color: #01b59e;
+}
+
+.content-block1-item_img {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.content-block1-item_h {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: KozGoPro_Light;
+  text-transform: uppercase;
+}
+
+.content-block1-item_h h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: KozGoPro_Heavy;
+}
+
+.content-block1-item_h h3 {
+  font-size: 20px;
+}
+
+.content-block1-item_h_text-black h2 {
+  color: #383838;
+  font-family: KozGoPro_Heavy;
+}
+
+.content-block1-item_h_text-black h3 {
+  color: #383838;
+}
+
+.content-block1-item_h_text-heavy h2 {
+  font-family: KozGoPro_Heavy;
+}
+
+.content-block1-item_h__items {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.content-block1-item_h__items-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

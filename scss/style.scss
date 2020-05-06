@@ -1,5 +1,6 @@
 @import "fonts";
 @import "colors";
+@import "media";
 
 button,
 input,
@@ -10,9 +11,21 @@ a {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
+}
+
+.row {
+  margin: 0;
 }
 
 body {
@@ -24,6 +37,7 @@ body {
   font-size: 16px;
 }
 
+// Top nav menu
 .top-nav {
   background-color: #fff;
   display: flex;
@@ -164,54 +178,144 @@ body {
   }
 }
 
+// Slider
 .slick-slide {
-    height: 100vh;
+  height: 100vh;
 }
 
 .slick-next {
-    position: absolute;
-    right: -85px;
-    display: block;
-    height: 50px;
-    width: 50px;
-    line-height: 0px;
-    font-size: 0px;
-    cursor: pointer;
-    background: transparent;
-    color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    padding: 0;
-    outline: none;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(315deg);
+  position: absolute;
+  right: -85px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(315deg);
 }
 .slick-prev {
-    position: absolute;
-    left: -85px;
-    display: block;
-    height: 50px;
-    width: 50px;
-    line-height: 0px;
-    font-size: 0px;
-    cursor: pointer;
-    background: transparent;
-    color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    padding: 0;
-    outline: none;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(135deg);
+  position: absolute;
+  left: -85px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(135deg);
 }
 .slick-next:before {
-    content: '';
+  content: "";
 }
 .slick-prev:before {
-    content: '';
+  content: "";
 }
+
+// Content
+
+// Block1
+.content {
+  margin-top: 67px;
+  margin-bottom: 100px;
+  &-block1 {
+    margin-bottom: 95px;
+    & h1 {
+      font-size: 35px;
+      font-family: KozGoPro_Medium;
+      color: $active-color;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 35px;
+      &_primary {
+        background-color: $primary;
+      }
+      &_orange {
+        background-color: rgb(255, 182, 50);
+      }
+      &_green {
+        background-color: rgb(25, 254, 161);
+      }
+      &_grey {
+        background-color: rgb(72, 98, 111);
+      }
+      &_yellow {
+        background-color: rgb(254, 241, 2);
+      }
+      &_aqua {
+        background-color: rgb(1, 181, 158);
+      }
+      &_img {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      &_h {
+        flex-direction: column;
+        color: white;
+        font-family: KozGoPro_Light;
+        text-transform: uppercase;
+        & h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+          font-family: KozGoPro_Heavy;
+        }
+        & h3 {
+          font-size: 20px;
+        }
+        &_text-black {
+          & h2 {
+            color: $text-color;
+            font-family: KozGoPro_Heavy;
+          }
+          & h3 {
+            color: $text-color;
+          }
+        }
+        &_text-heavy {
+          & h2 {
+            font-family: KozGoPro_Heavy;
+          }
+        }
+        &__items {
+          flex-direction: row;
+          position: relative;
+          &-point {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
 
