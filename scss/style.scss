@@ -28,6 +28,44 @@ h5 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 5px 30px;
+  display: inline-block;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  &-white {
+    background-color: #fff;
+    width: 250px;
+    font-size: 24px;
+    color: $red-color;
+    text-align: center;
+    font-family: KozGoPro_Medium;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-primary {
+    background-color: $primary;
+    width: 130px;
+    margin-bottom: 30px;
+    &:hover {
+      background-color: lighten($primary, 2%);
+    }
+  }
+}
+
 body {
   background-color: #fff;
   color: $text-color;
@@ -289,6 +327,19 @@ body {
         & h3 {
           font-size: 20px;
         }
+        & h4 {
+          font-size: 18px;
+          text-transform: none;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+        }
         &_text-black {
           & h2 {
             color: $text-color;
@@ -319,7 +370,7 @@ body {
   }
   //   block2
   &-block2 {
-    margin-bottom: 85px;
+    margin-bottom: 55px;
     padding: 55px 55px 75px 55px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -340,7 +391,7 @@ body {
         padding: 20px 28px;
         margin-right: 20px;
         &_pink {
-            background-color: rgb(255, 65, 129);
+          background-color: rgb(255, 65, 129);
         }
       }
       &_h {
@@ -348,55 +399,169 @@ body {
         color: $text-color;
         text-transform: uppercase;
         & h2 {
-            font-size: 26px;
-            font-family: KozGoPro_Medium;
+          font-size: 26px;
+          font-family: KozGoPro_Medium;
         }
         & h3 {
-            margin-left: 10px;
-            font-size: 20px;
-            font-family: KozGoPro_Light;
+          margin-left: 10px;
+          font-size: 20px;
+          font-family: KozGoPro_Light;
         }
         &__items {
-            & h3 {
-                font-size: 16px;
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 10px;
-                    height: 10px;
-                    background-color: $text-color;
-                    border-radius: 50%;
-                    margin-right: 10px;
-                }
+          & h3 {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.75;
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              background-color: $text-color;
+              border-radius: 50%;
+              margin-right: 10px;
             }
+          }
         }
       }
     }
   }
-//   block3
+  //   block3
   &-block3 {
-      margin-bottom: 55px;
-      background-color: $red-color;
-      padding: 65px 110px 85px 110px;
-      color: #fff;
-      & h1 {
-          font-size: 36px;
-          font-family: KozGoPro_Bold;
-          text-align: center;
-          text-transform: uppercase;
+    margin-bottom: 55px;
+    background-color: $red-color;
+    padding: 65px 0 85px 0;
+    color: #fff;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    & p {
+      font-size: 22px;
+      line-height: 1.864;
+    }
+  }
+  //   block4
+  &-block4 {
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: $red-color;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: $red-color;
+    }
+    &-item {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_card {
+        background-color: #fff;
+        text-align: center;
+        margin-bottom: 60px;
+        min-height: 522px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        & img {
+          width: 100%;
+        }
+        &-content {
+          margin-top: -85px;
+          padding-left: 10px;
+          padding-right: 10px;
+          &-img {
+            padding: 15px 25px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            & img {
+              width: 45px;
+              height: 50px;
+            }
+          }
+          & h3 {
+            font-size: 20px;
+            color: $primary;
+            font-family: KozGoPro_Bold;
+            margin-bottom: 10px;
+          }
+          & p {
+            font-size: 16px;
+            line-height: 1.563;
+          }
+          & a {
+            text-transform: none;
+          }
+        }
       }
-      & h2 {
-          font-size: 26px;
-          text-align: center;
-          margin-bottom: 15px;
+    }
+  }
+  //   Block5
+  &-block5 {
+    background-image: url(/img/block5/block5-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: white;
+    }
+    &-item {
+      background-color: #fff;
+      border-radius: 5px;
+      display: flex;
+      margin-bottom: 25px;
+      & img {
+        min-height: 280px;
       }
-      & p {
-          font-size: 22px;
-          line-height: 1.864;
+      &_content {
+        padding: 20px 20px 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & h3 {
+          font-size: 24px;
+          font-family: KozGoPro_Medium;
+          color: $primary;
+          margin-bottom: 10px;
+        }
+        & h4 {
+          font-size: 16px;
+          line-height: 1.75;
+          margin-bottom: 2rem;
+        }
       }
+    }
+    &-btn {
+      text-align: center;
+    }
   }
 }
-
-  
-
-  
