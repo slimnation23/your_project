@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".slider-blocks").slick();
 
   let menuBtn = $(".top-nav_button"); 
-  let adaptMenu = $(".adapt-menu");
+  let adaptMenu = $(".top-nav_menu");
   let btnScroll = $('.btn-scroll');
   let menuScroll = $('.content-block6-item_none');
   let plus = $('.fa-plus');

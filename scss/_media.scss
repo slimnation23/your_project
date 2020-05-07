@@ -1,33 +1,24 @@
-@media (max-width: 1291px) {
-  .top-nav_menu {
-    display: none !important;
-  }
-  .adapt-menu {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    background-color: #fff;
-    &_items {
+@media (max-width: 768px) {
+  // Top nav
+  .top-nav {
+    &_menu {
       flex-direction: column;
-      list-style: none;
+      display: none;
+      &__active {
+        display: flex;
+        margin-bottom: 0;
+      }
       & li {
-        margin-right: 20px;
+        line-height: 2;
         & a {
-          text-transform: uppercase;
-          text-decoration: none;
-          color: $nav-menu-text;
-          font-family: KozGoPro_Heavy;
-          font-size: 18px;
-          &:hover {
-            color: $active-color;
+          &::after {
+            display: none;
           }
         }
       }
     }
   }
-}
-
-@media (max-width: 767px) {
+  // Slider
   .slick-next {
     display: none !important;
   }
@@ -35,6 +26,62 @@
     display: none !important;
   }
   .slider-block_content {
-    
+    top: 8rem !important;
+    right: 2rem !important;
+    & h1 {
+      font-size: 1.5rem !important;
+    }
+    & .btn {
+      margin-top: 30px !important;
+    }
+  }
+  // Block1
+  .content-block1 {
+    .col-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .content-block1-item {
+    flex-direction: column;
+    &_img {
+      margin-bottom: 20px;
+    }
+    &_h {
+      display: flex;
+      align-items: center;
+    }
+  }
+  // Block2 {
+    .content-block2 {
+      padding: 0 !important;
+      padding-top: 50px !important;
+    }
+  .content-block2-item {
+    flex-direction: column;
+    align-items: center;
+    &_h {
+      & h2 {
+        margin-top: 20px;
+      }
+    }
+  }
+  // Block5
+  .content-block5-item {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    &_content {
+      align-items: center;
+    }
+  }
+  // Block7
+  .content-block7-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  // Footer
+  .footer_menu {
+    align-items: center;
   }
 }
