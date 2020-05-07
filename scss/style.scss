@@ -665,8 +665,8 @@ body {
 
 // footer
 .footer {
-  padding: 90px 30px;
-  background-image: url(/img/footer-bg.png);
+  padding: 90px 30px 40px 30px;
+  background-image: url(img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -713,7 +713,7 @@ body {
 
 // Company page
 .top-page {
-  background: url(/img/top-img.png), linear-gradient(0.25turn, $primary, #dadc55);
+  background: url(img/top-img.png), linear-gradient(0.25turn, $primary, #dadc55);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -722,7 +722,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   h1 {
     font-size: 36px;
     text-transform: uppercase;
@@ -830,4 +830,9 @@ body {
       line-height: 2;
     }
   }
+}
+
+// News
+.news_1 {
+  margin-bottom: 70px;
 }

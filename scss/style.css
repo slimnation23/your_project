@@ -1,26 +1,26 @@
 @font-face {
   font-family: KozGoPro_Bold;
-  src: url("/font/KozGoPro-Bold.otf");
+  src: url("font/KozGoPro-Bold.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Heavy;
-  src: url("/font/KozGoPro-Heavy.otf");
+  src: url("font/KozGoPro-Heavy.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Light;
-  src: url("/font/KozGoPro-Light.otf");
+  src: url("font/KozGoPro-Light.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Medium;
-  src: url("/font/KozGoPro-Medium.otf");
+  src: url("font/KozGoPro-Medium.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Regular;
-  src: url("/font/KozGoPro-Regular.otf");
+  src: url("font/KozGoPro-Regular.otf");
 }
 
 @media (max-width: 768px) {
@@ -962,8 +962,8 @@ body {
 }
 
 .footer {
-  padding: 90px 30px;
-  background-image: url(/img/footer-bg.png);
+  padding: 90px 30px 40px 30px;
+  background-image: url(img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -1027,8 +1027,8 @@ body {
 }
 
 .top-page {
-  background: url(/img/top-img.png), -webkit-gradient(linear, left top, right top, from(#00aced), to(#dadc55));
-  background: url(/img/top-img.png), linear-gradient(0.25turn, #00aced, #dadc55);
+  background: url(img/top-img.png), -webkit-gradient(linear, left top, right top, from(#00aced), to(#dadc55));
+  background: url(img/top-img.png), linear-gradient(0.25turn, #00aced, #dadc55);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -1046,7 +1046,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .top-page h1 {
@@ -1167,5 +1167,9 @@ body {
 .company_2-item p {
   margin-bottom: 40px;
   line-height: 2;
+}
+
+.news_1 {
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=style.css.map */
