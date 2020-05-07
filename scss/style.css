@@ -1,26 +1,26 @@
 @font-face {
   font-family: KozGoPro_Bold;
-  src: url("font/KozGoPro-Bold.otf");
+  src: url("../font/KozGoPro-Bold.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Heavy;
-  src: url("font/KozGoPro-Heavy.otf");
+  src: url("../font/KozGoPro-Heavy.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Light;
-  src: url("font/KozGoPro-Light.otf");
+  src: url("../font/KozGoPro-Light.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Medium;
-  src: url("font/KozGoPro-Medium.otf");
+  src: url("../font/KozGoPro-Medium.otf");
 }
 
 @font-face {
   font-family: KozGoPro_Regular;
-  src: url("font/KozGoPro-Regular.otf");
+  src: url("../font/KozGoPro-Regular.otf");
 }
 
 @media (max-width: 768px) {
@@ -183,17 +183,30 @@ p {
 
 .btn-red {
   background-color: #ef3139;
-  color: #fff;
-  font-size: 25px;
+}
+
+.btn-red:hover {
+  opacity: 0.5;
+}
+
+.btn-green {
+  background-color: #b1d518;
+}
+
+.btn-green:hover {
+  opacity: 0.5;
+}
+
+.btn-yellow {
+  background-color: #ffa721;
+}
+
+.btn-yellow:hover {
+  opacity: 0.5;
 }
 
 .btn-white {
   background-color: #fff;
-  width: 250px;
-  font-size: 24px;
-  color: #ef3139;
-  text-align: center;
-  font-family: KozGoPro_Medium;
 }
 
 .btn-white:hover {
@@ -202,12 +215,26 @@ p {
 
 .btn-primary {
   background-color: #00aced;
-  width: 130px;
-  margin-bottom: 30px;
 }
 
 .btn-primary:hover {
-  background-color: #00b3f7;
+  opacity: 0.5;
+}
+
+.btn-grey {
+  background-color: #152004;
+}
+
+.btn-grey:hover {
+  opacity: 0.5;
+}
+
+.btn-orange {
+  background-color: #ff5000;
+}
+
+.btn-orange:hover {
+  opacity: 0.5;
 }
 
 body {
@@ -771,8 +798,13 @@ body {
   text-transform: none;
 }
 
+.content-block4-item_card a {
+  width: 130px;
+  margin-bottom: 30px;
+}
+
 .content-block5 {
-  background-image: url(/img/block5/block5-bg.png);
+  background-image: url(../img/block5/block5-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
@@ -834,8 +866,21 @@ body {
   margin-bottom: 2rem;
 }
 
+.content-block5-item_content a {
+  width: 130px;
+  margin-bottom: 30px;
+}
+
 .content-block5-btn {
   text-align: center;
+}
+
+.content-block5-btn a {
+  width: 250px;
+  font-size: 24px;
+  color: #ef3139;
+  text-align: center;
+  font-family: KozGoPro_Medium;
 }
 
 .content-block6 {
@@ -961,9 +1006,14 @@ body {
   margin-top: 25px;
 }
 
+.content-block7-btn a {
+  font-size: 25px;
+  color: #fff;
+}
+
 .footer {
   padding: 90px 30px 40px 30px;
-  background-image: url(img/footer-bg.png);
+  background-image: url(../img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -1027,8 +1077,8 @@ body {
 }
 
 .top-page {
-  background: url(img/top-img.png), -webkit-gradient(linear, left top, right top, from(#00aced), to(#dadc55));
-  background: url(img/top-img.png), linear-gradient(0.25turn, #00aced, #dadc55);
+  background: url(../img/top-img.png), -webkit-gradient(linear, left top, right top, from(#00aced), to(#dadc55));
+  background: url(../img/top-img.png), linear-gradient(0.25turn, #00aced, #dadc55);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -1171,5 +1221,182 @@ body {
 
 .news_1 {
   margin-bottom: 70px;
+}
+
+.news_1 h1 {
+  font-size: 38px;
+  color: #ef3139;
+  font-family: KozGoPro_Bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.news_1-card {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.news_1-card img {
+  width: 100%;
+}
+
+.news_1-card_grey {
+  border-bottom: 3px solid #152004;
+}
+
+.news_1-card_orange {
+  border-bottom: 3px solid #ff5000;
+}
+
+.news_1-card_red {
+  border-bottom: 3px solid #ef3139;
+}
+
+.news_1-card_yellow {
+  border-bottom: 3px solid #ffa721;
+}
+
+.news_1-card_primary {
+  border-bottom: 3px solid #00aced;
+}
+
+.news_1-card_green {
+  border-bottom: 3px solid #b1d518;
+}
+
+.news_1-card__content {
+  padding: 10px 30px 25px 30px;
+}
+
+.news_1-card__content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.news_1-card__content-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.news_1-card__content-icon img {
+  width: 23px;
+  margin-right: 15px;
+}
+
+.news_1-card__content-icon span {
+  font-size: 14px;
+}
+
+.news_1-card__content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.news_1-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #15202c;
+  margin-bottom: 60px;
+}
+
+.news_1-pagination_numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news_1-pagination_numbers_active {
+  background-color: #00aced !important;
+}
+
+.news_1-pagination_numbers a {
+  margin-right: 15px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: KozGoPro_Bold;
+  text-decoration: none;
+  color: #15202c;
+  font-size: 18px;
+}
+
+.news_1-pagination_numbers a:nth-last-child(1) {
+  background-color: transparent;
+}
+
+.news_1-pagination_numbers a:nth-last-child(4) {
+  background-color: transparent;
+}
+
+.news_1-content {
+  margin-bottom: 35px;
+}
+
+.news_1-content h1 {
+  font-size: 38px;
+  color: #ef3139;
+  text-align: center;
+  font-family: KozGoPro_Bold;
+}
+
+.news_1-content-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news_1-content-center-item {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.news_1-content-center-item h4 {
+  color: #00aced;
+  font-family: KozGoPro_Bold;
+  margin-right: 35px;
+}
+
+.news_1-content_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
