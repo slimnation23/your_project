@@ -84,4 +84,14 @@
   .footer_menu {
     align-items: center;
   }
+  // Company page
+  .company_1-item2_content {
+    justify-content: center;
+    &-line {
+      display: none;
+    }
+    &-text {
+      text-align: center;
+    }
+  }
 }
