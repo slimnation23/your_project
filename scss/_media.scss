@@ -53,10 +53,10 @@
     }
   }
   // Block2 {
-    .content-block2 {
-      padding: 0 !important;
-      padding-top: 50px !important;
-    }
+  .content-block2 {
+    padding: 0 !important;
+    padding-top: 50px !important;
+  }
   .content-block2-item {
     flex-direction: column;
     align-items: center;
@@ -85,13 +85,42 @@
     align-items: center;
   }
   // Company page
-  .company_1-item2_content {
-    justify-content: center;
-    &-line {
-      display: none;
+  .company_1 {
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center;
+      img {
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        width: 100%;
+      }
+      &-content {
+        h1 {
+          text-align: center;
+          margin-top: 25px;
+        }
+      }
     }
-    &-text {
-      text-align: center;
+    &-item2 {
+      justify-content: center;
+      h1 {
+        text-align: center;
+      }
+      &_content {
+        justify-content: center;
+        flex-direction: column;
+        img {
+          padding-right: 0;
+        }
+        &-line {
+          display: none;
+        }
+        &-text {
+          text-align: center;
+        }
+      }
     }
   }
   // Register page
