@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  $(".slider-blocks").slick();
+  $(".slider-blocks").slick({
+    autoplay: true,
+  });
 
   let menuBtn = $(".top-nav_button"); 
   let adaptMenu = $(".top-nav_menu");
