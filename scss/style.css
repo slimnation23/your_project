@@ -191,6 +191,23 @@
     padding: 10px;
     width: 70% !important;
   }
+  .guide-points-container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .guide-points-container-line {
+    display: none;
+  }
+  .guide-points-container-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .guide-points-container-items p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2015,6 +2032,478 @@ body {
 }
 
 .services7-item-content-items p {
+  font-family: KozGoPro_Regular;
+}
+
+.guide {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 95px;
+  padding-top: 50px;
+}
+
+.guide h1 {
+  color: #ef3139;
+  text-align: center;
+  font-family: KozGoPro_Regular;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.guide h2 {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.guide h3 {
+  text-align: center;
+  margin-bottom: 75px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.guide-cards {
+  padding: 60px 45px;
+}
+
+.guide-cards-img1 {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-cards-img1 img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.guide-cards-img1_content {
+  position: absolute;
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guide-cards-img1_content-block {
+  border: 1px solid #ef3139;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.guide-cards-img1_content-block img {
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  height: 170px;
+}
+
+.guide-cards-img1_content h4 {
+  color: #ef3139;
+  font-size: 28px;
+  font-family: KozGoPro_Bold;
+}
+
+.guide-cards-img1_content p {
+  text-align: center;
+}
+
+.guide-cards-img2 {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-cards-img2 img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.guide-cards-img2_content {
+  position: absolute;
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guide-cards-img2_content-block {
+  border: 1px solid #00aced;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.guide-cards-img2_content-block img {
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  height: 170px;
+}
+
+.guide-cards-img2_content h4 {
+  color: #00aced;
+  font-size: 28px;
+  font-family: KozGoPro_Bold;
+}
+
+.guide-cards-img2_content p {
+  text-align: center;
+}
+
+.guide-cards-img3 {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-cards-img3 img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.guide-cards-img3_content {
+  position: absolute;
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guide-cards-img3_content-block {
+  border: 1px solid #b1d518;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.guide-cards-img3_content-block img {
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  height: 170px;
+}
+
+.guide-cards-img3_content h4 {
+  color: #b1d518;
+  font-size: 28px;
+  font-family: KozGoPro_Bold;
+}
+
+.guide-cards-img3_content p {
+  text-align: center;
+}
+
+.guide-cards-img4 {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-cards-img4 img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.guide-cards-img4_content {
+  position: absolute;
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guide-cards-img4_content-block {
+  border: 1px solid #15202c;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.guide-cards-img4_content-block img {
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  height: 170px;
+}
+
+.guide-cards-img4_content h4 {
+  color: #15202c;
+  font-size: 28px;
+  font-family: KozGoPro_Bold;
+}
+
+.guide-cards-img4_content p {
+  text-align: center;
+}
+
+.guide-cards-img5 {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-cards-img5 img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.guide-cards-img5_content {
+  position: absolute;
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guide-cards-img5_content-block {
+  border: 1px solid #ff5000;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.guide-cards-img5_content-block img {
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  height: 170px;
+}
+
+.guide-cards-img5_content h4 {
+  color: #ff5000;
+  font-size: 28px;
+  font-family: KozGoPro_Bold;
+}
+
+.guide-cards-img5_content p {
+  text-align: center;
+}
+
+.guide-cards-img6 {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guide-cards-img6 img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.guide-cards-img6_content {
+  position: absolute;
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guide-cards-img6_content-block {
+  border: 1px solid #ffa721;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.guide-cards-img6_content-block img {
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  height: 170px;
+}
+
+.guide-cards-img6_content h4 {
+  color: #ffa721;
+  font-size: 28px;
+  font-family: KozGoPro_Bold;
+}
+
+.guide-cards-img6_content p {
+  text-align: center;
+}
+
+.guide-cards2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.guide-cards2_white {
+  height: 305px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 50px 20px;
+  background-color: #fff;
+  margin-top: -10px;
+}
+
+.guide-cards2_white h5 {
+  font-size: 20px;
+  font-family: KozGoPro_Bold;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.guide-cards2_white p {
+  font-family: KozGoPro_Regular;
+  margin-bottom: 15px;
+}
+
+.guide-cards2_img {
+  padding: 0;
+  margin-top: -10px;
+}
+
+.guide-cards2_img img {
+  width: 100%;
+  height: 305px;
+}
+
+.guide-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 70px;
+}
+
+.guide-points-container {
+  width: 650px;
+  text-align: left;
+}
+
+.guide-points-container-line {
+  width: 4px;
+  background-color: #ffa721;
+  height: 25px;
+  margin-left: 50px;
+}
+
+.guide-points-container-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guide-points-container-items_point {
+  border-radius: 50%;
+  border: 1px solid #ffa721;
+  padding: 4px;
+  margin-right: 20px;
+}
+
+.guide-points-container-items_point-bg {
+  background-color: #ffa721;
+  border-radius: 50%;
+  padding: 10px 35px;
+  font-size: 40px;
+  font-family: KozGoPro_Bold;
+  color: #fff;
+}
+
+.guide-points-container-items p {
+  font-size: 24px;
   font-family: KozGoPro_Regular;
 }
 /*# sourceMappingURL=style.css.map */

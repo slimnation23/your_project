@@ -135,7 +135,23 @@
       width: 70% !important;
     }
   }
-
+// Guide Page
+.guide-points {
+  &-container {
+    padding-left: 45px;
+    padding-right: 45px;
+    &-line {
+      display: none;
+    }
+    &-items {
+      flex-direction: column;
+      margin-bottom: 40px;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
 }
 
 @media (max-width: 767px) {
