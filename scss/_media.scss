@@ -135,28 +135,32 @@
       width: 70% !important;
     }
   }
-// Guide Page
-.guide-points {
-  &-container {
-    padding-left: 45px;
-    padding-right: 45px;
-    &-line {
-      display: none;
-    }
-    &-items {
-      flex-direction: column;
-      margin-bottom: 40px;
-      p {
-        text-align: center;
+  // Guide Page
+  .guide-points {
+    &-container {
+      padding-left: 45px;
+      padding-right: 45px;
+      &-line {
+        display: none;
+      }
+      &-items {
+        flex-direction: column;
+        margin-bottom: 40px;
+        p {
+          text-align: center;
+        }
       }
     }
   }
 }
-}
 
 @media (max-width: 767px) {
-   // Services Page
-   .services1-item-img, .services2-item-img, .services4-item-img, .services6-item-img, .services7-item-img {
+  // Services Page
+  .services1-item-img,
+  .services2-item-img,
+  .services4-item-img,
+  .services6-item-img,
+  .services7-item-img {
     margin-right: 0 !important;
     margin-bottom: 40px;
     img {
@@ -170,10 +174,15 @@
 }
 
 @media (max-width: 400px) {
-  .guide-cards-img1, .guide-cards-img2, .guide-cards-img3, .guide-cards-img4, .guide-cards-img5, .guide-cards-img6 {
+  .guide-cards-img1,
+  .guide-cards-img2,
+  .guide-cards-img3,
+  .guide-cards-img4,
+  .guide-cards-img5,
+  .guide-cards-img6 {
     &_content {
       top: 0 !important;
-      left: 15%;
+      left: 5% !important;
       padding-left: 20px;
       padding-right: 20px;
       &-block {

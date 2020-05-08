@@ -211,27 +211,49 @@
 }
 
 @media (max-width: 767px) {
-  .services1-item-img, .services2-item-img, .services4-item-img, .services6-item-img, .services7-item-img {
+  .services1-item-img,
+  .services2-item-img,
+  .services4-item-img,
+  .services6-item-img,
+  .services7-item-img {
     margin-right: 0 !important;
     margin-bottom: 40px;
   }
-  .services1-item-img img, .services2-item-img img, .services4-item-img img, .services6-item-img img, .services7-item-img img {
+  .services1-item-img img,
+  .services2-item-img img,
+  .services4-item-img img,
+  .services6-item-img img,
+  .services7-item-img img {
     width: 100%;
   }
-  .services1-item-img_block, .services2-item-img_block, .services4-item-img_block, .services6-item-img_block, .services7-item-img_block {
+  .services1-item-img_block,
+  .services2-item-img_block,
+  .services4-item-img_block,
+  .services6-item-img_block,
+  .services7-item-img_block {
     right: 31% !important;
     top: 87% !important;
   }
 }
 
 @media (max-width: 400px) {
-  .guide-cards-img1_content, .guide-cards-img2_content, .guide-cards-img3_content, .guide-cards-img4_content, .guide-cards-img5_content, .guide-cards-img6_content {
+  .guide-cards-img1_content,
+  .guide-cards-img2_content,
+  .guide-cards-img3_content,
+  .guide-cards-img4_content,
+  .guide-cards-img5_content,
+  .guide-cards-img6_content {
     top: 0 !important;
-    left: 5%;
+    left: 5% !important;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .guide-cards-img1_content-block img, .guide-cards-img2_content-block img, .guide-cards-img3_content-block img, .guide-cards-img4_content-block img, .guide-cards-img5_content-block img, .guide-cards-img6_content-block img {
+  .guide-cards-img1_content-block img,
+  .guide-cards-img2_content-block img,
+  .guide-cards-img3_content-block img,
+  .guide-cards-img4_content-block img,
+  .guide-cards-img5_content-block img,
+  .guide-cards-img6_content-block img {
     width: 100px !important;
     height: 100px !important;
   }
