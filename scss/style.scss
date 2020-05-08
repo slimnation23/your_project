@@ -124,14 +124,19 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    &__active {
+      color: $active-color !important;
+    }
     & li {
       margin-right: 39px;
+      
       & a {
         text-transform: uppercase;
         text-decoration: none;
         color: $nav-menu-text;
         font-family: KozGoPro_Heavy;
         font-size: 18px;
+        
         &:hover {
           color: $active-color;
         }
@@ -1756,7 +1761,5 @@ body {
         }
       }
     }
-    
-    
   }
 }

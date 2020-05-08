@@ -407,6 +407,10 @@ body {
       flex-wrap: wrap;
 }
 
+.top-nav_items__active {
+  color: #ff5000 !important;
+}
+
 .top-nav_items li {
   margin-right: 39px;
 }
