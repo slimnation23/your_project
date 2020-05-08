@@ -244,12 +244,8 @@
   .guide-cards-img5_content,
   .guide-cards-img6_content {
     top: 0 !important;
-<<<<<<< Updated upstream
     left: 5% !important;
-=======
-    left: 15%;
->>>>>>> Stashed changes
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
   }
   .guide-cards-img1_content-block img,
