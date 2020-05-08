@@ -224,6 +224,18 @@
   }
 }
 
+@media (max-width: 400px) {
+  .guide-cards-img1_content, .guide-cards-img2_content, .guide-cards-img3_content, .guide-cards-img4_content, .guide-cards-img5_content, .guide-cards-img6_content {
+    top: 0 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .guide-cards-img1_content-block img, .guide-cards-img2_content-block img, .guide-cards-img3_content-block img, .guide-cards-img4_content-block img, .guide-cards-img5_content-block img, .guide-cards-img6_content-block img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
 button:focus,
 input:focus,
 textarea:focus,
