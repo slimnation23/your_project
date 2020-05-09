@@ -257,7 +257,7 @@
             justify-content: center;
   }
   .contact-3_form-1_input-col, .contact-3_form-2_input-col, .contact-3_form-3_input-col {
-    width: 100% !important;
+    width: 90% !important;
   }
   .contact-3_form-1_input-col small, .contact-3_form-2_input-col small, .contact-3_form-3_input-col small {
     text-align: center !important;
@@ -268,20 +268,23 @@
   }
   .contact-3_form-1_input-cols, .contact-3_form-2_input-cols, .contact-3_form-3_input-cols {
     text-align: center !important;
+    margin-right: 0 !important;
   }
   .contact-3_form-1_input-70, .contact-3_form-2_input-70, .contact-3_form-3_input-70 {
-    width: 100% !important;
+    width: 90% !important;
     margin-bottom: 20px;
+    margin-right: 0 !important;
   }
   .contact-3_form-1_input-30, .contact-3_form-2_input-30, .contact-3_form-3_input-30 {
     width: 50% !important;
   }
   .contact-3_form-1_input-50, .contact-3_form-2_input-50, .contact-3_form-3_input-50 {
-    width: 100% !important;
+    width: 90% !important;
     margin-bottom: 20px;
+    margin-right: 0 !important;
   }
   .contact-3_form-1_input-80, .contact-3_form-2_input-80, .contact-3_form-3_input-80 {
-    width: 100% !important;
+    width: 90% !important;
     margin-bottom: 20px;
   }
   .contact-3 .contact-3_form-2_input-start {
@@ -308,6 +311,12 @@
   }
   .contact-3_form-3 h4 {
     text-align: center;
+  }
+  .contact-2_block {
+    padding-left: 0 !important;
+  }
+  .contact-3_h1 {
+    padding-left: 0 !important;
   }
 }
 
