@@ -8,24 +8,591 @@
     text-align: center;
     padding-bottom: 50px;
   }
-  &-grids {
-    display: flex;
-    &-grid-1 {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 0;
-      grid-template-areas:
-        "name1 name1 name1"
-        "name2 name2 name2"
-        "name2 name2 name2"
-        "name1 name1 name1";
-        &-name {
-            grid-area: name1;
-        }
-        &-name2 {
-            grid-area: name2;
-        }
-    }
+}
+.pricing-grids {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  padding-bottom: 60px;
+}
+.grid1 {
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "withoutText withoutText withoutText"
+    "whiteText whiteText whiteText"
+    "blueText1 blueText2 blueText4"
+    "blueText1 blueText2 blueText5"
+    "blueText1 blueText3 blueText6"
+    "blueText1 blueText3 blueText7"
+    "activeText1 activeText2 activeText5"
+    "activeText1 activeText2 activeText5"
+    "activeText1 activeText2 activeText6"
+    "activeText1 activeClear activeText7"
+    "activeText1 activeClear activeText8"
+    "activeText1 activeClear activeText8"
+    "activeText1 activeClear activeText9"
+    "activeText1 activeClear activeText10"
+    "activeText1 activeClear activeText10"
+    "activeText1 activeClear activeText10"
+    "activeText1 activeClear activeText11"
+    "activeText1 activeClear activeText12"
+    "activeText1 activeText3 activeText13"
+    "activeText1 activeClear2 activeText14"
+    "activeText1 activeClear2 activeText15"
+    "activeText1 activeText4 activeText16"
+    "activeText1 activeText4 activeText17"
+    "activeText1 activeText4 activeText18"
+    "orangeText1 orangeText2 orangeText2"
+    "orangeText1 orangeText3 orangeText3"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText5 orangeText5"
+    "greenText1 greenText2 greenText2"
+    "greenText1 greenText3 greenText3"
+    "greenText1 greenText4 greenText4"
+    "greenText1 greenText5 greenText5"
+    "greyText1 greyText3 greyText3"
+    "greyText2 greyText4 greyText4"
+    "greyText2 greyText5 greyText5"
+    "greyText2 greyText6 greyText6";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.grid__white {
+  grid-area: withoutText;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid rgb(196, 196, 196);
+  border-left: 1px solid rgb(196, 196, 196);
+  border-top: 1px solid rgb(196, 196, 196);
+}
+
+.grid__whiteText {
+  grid-area: whiteText;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid rgb(196, 196, 196);
+  border-left: 1px solid rgb(196, 196, 196);
+  border-top: 1px solid rgb(196, 196, 196);
+}
+
+.grid__blueText {
+  grid-area: blueText;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText1 {
+  grid-area: blueText1;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText2 {
+  grid-area: blueText2;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText3 {
+  grid-area: blueText3;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText4 {
+  grid-area: blueText4;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText5 {
+  grid-area: blueText5;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText6 {
+  grid-area: blueText6;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText7 {
+  grid-area: blueText7;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText1 {
+  grid-area: activeText1;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText2 {
+  grid-area: activeText2;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText3 {
+  grid-area: activeText3;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText4 {
+  grid-area: activeText4;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText5 {
+  grid-area: activeText5;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText6 {
+  grid-area: activeText1;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText6 {
+  grid-area: activeText6;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText7 {
+  grid-area: activeText7;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText8 {
+  grid-area: activeText8;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText9 {
+  grid-area: activeText9;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText10 {
+  grid-area: activeText10;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText11 {
+  grid-area: activeText11;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText12 {
+  grid-area: activeText12;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText13 {
+  grid-area: activeText13;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText14 {
+  grid-area: activeText14;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText15 {
+  grid-area: activeText15;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText16 {
+  grid-area: activeText16;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText17 {
+  grid-area: activeText17;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText18 {
+  grid-area: activeText18;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeClear {
+  grid-area: activeClear;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeClear2 {
+  grid-area: activeClear2;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText1 {
+  grid-area: orangeText1;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText2 {
+  grid-area: orangeText2;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText3 {
+  grid-area: orangeText3;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText4 {
+  grid-area: orangeText4;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText5 {
+  grid-area: orangeText5;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText1 {
+  grid-area: greenText1;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText2 {
+  grid-area: greenText2;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText3 {
+  grid-area: greenText3;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText4 {
+  grid-area: greenText4;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText5 {
+  grid-area: greenText5;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText1 {
+  grid-area: greyText1;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText2 {
+  grid-area: greyText2;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText3 {
+  grid-area: greyText3;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText4 {
+  grid-area: greyText4;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText5 {
+  grid-area: greyText5;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText6 {
+  grid-area: greyText6;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+// Grid2
+.grid2 {
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "white1 white2 white3"
+    "white4 white5 white6"
+    "white7 white8 white9";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "有在庫";
+    top: -50px;
+    color: white;
+    font-size: 22px;
+    font-family: KozGoPro_Medium;
+    height: 0;
+    width: 100%;
+    border-bottom: 50px solid #b1d519;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
   }
+}
+
+.grid__bgWhite1 {
+  grid-area: white1;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite2 {
+  grid-area: white2;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite3 {
+  grid-area: white3;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite4 {
+  grid-area: white4;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite5 {
+  grid-area: white5;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite6 {
+  grid-area: white6;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite7 {
+  grid-area: white7;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite8 {
+  grid-area: white8;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite9 {
+  grid-area: white9;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
 }

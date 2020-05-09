@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: KozGoPro_Bold;
   src: url("../font/KozGoPro-Bold.otf");
@@ -3675,31 +3676,735 @@ input[type="file"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 70px;
+  padding-bottom: 60px;
 }
 
-.pricing-grids-grid-1 {
+.grid1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0;
-      grid-template-areas: "name name name name" "name2 name2 name2 name2" "name name name tokio" "sydney sydney sydney sydney";
+      grid-template-areas: "withoutText withoutText withoutText" "whiteText whiteText whiteText" "blueText1 blueText2 blueText4" "blueText1 blueText2 blueText5" "blueText1 blueText3 blueText6" "blueText1 blueText3 blueText7" "activeText1 activeText2 activeText5" "activeText1 activeText2 activeText5" "activeText1 activeText2 activeText6" "activeText1 activeClear activeText7" "activeText1 activeClear activeText8" "activeText1 activeClear activeText8" "activeText1 activeClear activeText9" "activeText1 activeClear activeText10" "activeText1 activeClear activeText10" "activeText1 activeClear activeText10" "activeText1 activeClear activeText11" "activeText1 activeClear activeText12" "activeText1 activeText3 activeText13" "activeText1 activeClear2 activeText14" "activeText1 activeClear2 activeText15" "activeText1 activeText4 activeText16" "activeText1 activeText4 activeText17" "activeText1 activeText4 activeText18" "orangeText1 orangeText2 orangeText2" "orangeText1 orangeText3 orangeText3" "orangeText1 orangeText4 orangeText4" "orangeText1 orangeText4 orangeText4" "orangeText1 orangeText4 orangeText4" "orangeText1 orangeText4 orangeText4" "orangeText1 orangeText4 orangeText4" "orangeText1 orangeText5 orangeText5" "greenText1 greenText2 greenText2" "greenText1 greenText3 greenText3" "greenText1 greenText4 greenText4" "greenText1 greenText5 greenText5" "greyText1 greyText3 greyText3" "greyText2 greyText4 greyText4" "greyText2 greyText5 greyText5" "greyText2 greyText6 greyText6";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
 }
 
-.pricing-grids-grid-1-name {
+.grid__white {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: name;
+  -ms-grid-column-span: 3;
+  grid-area: withoutText;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
 }
 
-.pricing-grids-grid-1-name2 {
+.grid__whiteText {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: name2;
+  -ms-grid-column-span: 3;
+  grid-area: whiteText;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+}
+
+.grid__blueText {
+  grid-area: blueText;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: blueText1;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: blueText2;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText3 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: blueText3;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: blueText4;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: blueText5;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: blueText6;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText7 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: blueText7;
+  height: 100%;
+  background: #00aced;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText1 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 18;
+  -ms-grid-column: 1;
+  grid-area: activeText1;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText2 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: activeText2;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText3 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 2;
+  grid-area: activeText3;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText4 {
+  -ms-grid-row: 22;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: activeText4;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText5 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: activeText5;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText6 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 18;
+  -ms-grid-column: 1;
+  grid-area: activeText1;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText6 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: activeText6;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText7 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 3;
+  grid-area: activeText7;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText8 {
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: activeText8;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText9 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 3;
+  grid-area: activeText9;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText10 {
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: activeText10;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText11 {
+  -ms-grid-row: 17;
+  -ms-grid-column: 3;
+  grid-area: activeText11;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText12 {
+  -ms-grid-row: 18;
+  -ms-grid-column: 3;
+  grid-area: activeText12;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText13 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 3;
+  grid-area: activeText13;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText14 {
+  -ms-grid-row: 20;
+  -ms-grid-column: 3;
+  grid-area: activeText14;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText15 {
+  -ms-grid-row: 21;
+  -ms-grid-column: 3;
+  grid-area: activeText15;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText16 {
+  -ms-grid-row: 22;
+  -ms-grid-column: 3;
+  grid-area: activeText16;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText17 {
+  -ms-grid-row: 23;
+  -ms-grid-column: 3;
+  grid-area: activeText17;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText18 {
+  -ms-grid-row: 24;
+  -ms-grid-column: 3;
+  grid-area: activeText18;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeClear {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 9;
+  -ms-grid-column: 2;
+  grid-area: activeClear;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeClear2 {
+  -ms-grid-row: 20;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: activeClear2;
+  height: 100%;
+  background: #ff5000;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__orangeText1 {
+  -ms-grid-row: 25;
+  -ms-grid-row-span: 8;
+  -ms-grid-column: 1;
+  grid-area: orangeText1;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__orangeText2 {
+  -ms-grid-row: 25;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: orangeText2;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__orangeText3 {
+  -ms-grid-row: 26;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: orangeText3;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__orangeText4 {
+  -ms-grid-row: 27;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: orangeText4;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__orangeText5 {
+  -ms-grid-row: 32;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: orangeText5;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greenText1 {
+  -ms-grid-row: 33;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: greenText1;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greenText2 {
+  -ms-grid-row: 33;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greenText2;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greenText3 {
+  -ms-grid-row: 34;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greenText3;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greenText4 {
+  -ms-grid-row: 35;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greenText4;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greenText5 {
+  -ms-grid-row: 36;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greenText5;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greyText1 {
+  -ms-grid-row: 37;
+  -ms-grid-column: 1;
+  grid-area: greyText1;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greyText2 {
+  -ms-grid-row: 38;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: greyText2;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greyText3 {
+  -ms-grid-row: 37;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greyText3;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greyText4 {
+  -ms-grid-row: 38;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greyText4;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greyText5 {
+  -ms-grid-row: 39;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greyText5;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__greyText6 {
+  -ms-grid-row: 40;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: greyText6;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid2 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+      grid-template-areas: "white1 white2 white3" "white4 white5 white6" "white7 white8 white9";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+
+.grid2::before {
+  position: absolute;
+  content: "有在庫";
+  top: -50px;
+  color: white;
+  font-size: 22px;
+  font-family: KozGoPro_Medium;
+  height: 0;
+  width: 100%;
+  border-bottom: 50px solid #b1d519;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.grid__bgWhite1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: white1;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: white2;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: white3;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: white4;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: white5;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: white6;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: white7;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: white8;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: white9;
+  height: 100%;
+  background: white;
+  color: #383838;
+  border: 1px solid #b1d519;
 }
 /*# sourceMappingURL=style.css.map */
