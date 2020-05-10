@@ -32,36 +32,6 @@
 }
 
 @media (max-width: 768px) {
-  // Pricing
-  .grid1 {
-    flex: 0 0 50%;
-    margin-bottom: 50px;
-  }
-  .grid2 {
-    flex: 0 0 50%;
-    margin-bottom: 50px;
-  }
-  .grid3 {
-    flex: 0 0 50%;
-  }
-  .grid4 {
-    display: grid;
-  grid-auto-rows: 70px !important;
-  grid-template-columns: auto !important;
-  grid-gap: 0 !important;
-  grid-template-areas:
-    "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
-    "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
-    "red1 red3 red4 red4 red4 red4 red4 red4 red5 red5 red5"
-    "red1 red3 red6 red6 red6 red6 red6 red6 red6 red6 red6"
-    "red1 red7 red8 red8 red8 red8 red8 red8 red9 red9 red9"
-    "red1 red7 red10 red10 red10 red10 red11 red11 red11 red11 red11"
-    "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13"
-    "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13" !important;
-  width: 100% !important;
-  text-align: center;
-  font-size: 16px;
-  }
   // Slider
   .slick-next {
     display: none !important;
@@ -302,14 +272,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .grid1,
-  .grid2,
-  .grid3 {
-    flex: 0 0 100%;
-  }
-}
-
 @media (max-width: 400px) {
   .guide-cards-img1,
   .guide-cards-img2,
@@ -329,10 +291,5 @@
         }
       }
     }
-  }
-  .pricing-grids a {
-    font-size: 14px !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
   }
 }
