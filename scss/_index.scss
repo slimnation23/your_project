@@ -136,7 +136,7 @@ body {
     }
   }
   &_logo {
-    font-family: KozGoPro_Heavy;
+    font-family: KozGoPro_Bold;
     color: $primary;
     font-size: 36px;
     padding-left: 15px;
@@ -155,7 +155,7 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         color: $nav-menu-text;
-        font-family: KozGoPro_Heavy;
+        font-family: KozGoPro_Bold;
         font-size: 18px;
         &:hover {
           color: $active-color;
@@ -342,7 +342,7 @@ body {
         & h2 {
           font-size: 28px;
           margin-bottom: 10px;
-          font-family: KozGoPro_Heavy;
+          font-family: KozGoPro_Bold;
         }
         & h3 {
           font-size: 20px;
@@ -363,7 +363,7 @@ body {
         &_text-black {
           & h2 {
             color: $text-color;
-            font-family: KozGoPro_Heavy;
+            font-family: KozGoPro_Bold;
           }
           & h3 {
             color: $text-color;
@@ -371,7 +371,7 @@ body {
         }
         &_text-heavy {
           & h2 {
-            font-family: KozGoPro_Heavy;
+            font-family: KozGoPro_Bold;
           }
         }
         &__items {
@@ -702,7 +702,7 @@ body {
 // footer
 .footer {
   padding: 90px 30px 40px 30px;
-  background-image: url(../img/footer-bg.png);
+  background-image: url(../img/footer-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;

@@ -5,11 +5,6 @@
 }
 
 @font-face {
-  font-family: KozGoPro_Heavy;
-  src: url("../font/KozGoPro-Heavy.otf");
-}
-
-@font-face {
   font-family: KozGoPro_Light;
   src: url("../font/KozGoPro-Light.otf");
 }
@@ -581,7 +576,7 @@ body {
 }
 
 .top-nav_logo {
-  font-family: KozGoPro_Heavy;
+  font-family: KozGoPro_Bold;
   color: #00aced;
   font-size: 36px;
   padding-left: 15px;
@@ -608,7 +603,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #373737;
-  font-family: KozGoPro_Heavy;
+  font-family: KozGoPro_Bold;
   font-size: 18px;
 }
 
@@ -833,7 +828,7 @@ body {
 .content-block1-item_h h2 {
   font-size: 28px;
   margin-bottom: 10px;
-  font-family: KozGoPro_Heavy;
+  font-family: KozGoPro_Bold;
 }
 
 .content-block1-item_h h3 {
@@ -857,7 +852,7 @@ body {
 
 .content-block1-item_h_text-black h2 {
   color: #383838;
-  font-family: KozGoPro_Heavy;
+  font-family: KozGoPro_Bold;
 }
 
 .content-block1-item_h_text-black h3 {
@@ -865,7 +860,7 @@ body {
 }
 
 .content-block1-item_h_text-heavy h2 {
-  font-family: KozGoPro_Heavy;
+  font-family: KozGoPro_Bold;
 }
 
 .content-block1-item_h__items {
@@ -1077,7 +1072,7 @@ body {
 }
 
 .content-block5 {
-  background-image: url(../img/block5/block5-bg.png);
+  background-image: url(../img/block5/block5-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
@@ -1286,7 +1281,7 @@ body {
 
 .footer {
   padding: 90px 30px 40px 30px;
-  background-image: url(../img/footer-bg.png);
+  background-image: url(../img/footer-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
