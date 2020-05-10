@@ -46,21 +46,21 @@
   }
   .grid4 {
     display: grid;
-  grid-auto-rows: 70px !important;
-  grid-template-columns: auto !important;
-  grid-gap: 0 !important;
-  grid-template-areas:
-    "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
-    "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
-    "red1 red3 red4 red4 red4 red4 red4 red4 red5 red5 red5"
-    "red1 red3 red6 red6 red6 red6 red6 red6 red6 red6 red6"
-    "red1 red7 red8 red8 red8 red8 red8 red8 red9 red9 red9"
-    "red1 red7 red10 red10 red10 red10 red11 red11 red11 red11 red11"
-    "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13"
-    "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13" !important;
-  width: 100% !important;
-  text-align: center;
-  font-size: 16px;
+    grid-auto-rows: 70px !important;
+    grid-template-columns: auto !important;
+    grid-gap: 0 !important;
+    grid-template-areas:
+      "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
+      "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
+      "red1 red3 red4 red4 red4 red4 red4 red4 red5 red5 red5"
+      "red1 red3 red6 red6 red6 red6 red6 red6 red6 red6 red6"
+      "red1 red7 red8 red8 red8 red8 red8 red8 red9 red9 red9"
+      "red1 red7 red10 red10 red10 red10 red11 red11 red11 red11 red11"
+      "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13"
+      "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13" !important;
+    width: 100% !important;
+    text-align: center;
+    font-size: 16px;
   }
   // Slider
   .slick-next {
@@ -222,7 +222,9 @@
     &_h1 {
       text-align: center;
     }
-    &_form-1_input, &_form-2_input, &_form-3_input {
+    &_form-1_input,
+    &_form-2_input,
+    &_form-3_input {
       flex-direction: column;
       justify-content: center;
       &-col {
